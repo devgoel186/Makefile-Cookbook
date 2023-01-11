@@ -19,3 +19,12 @@ b:= 'one two'
 test:
 	printf '$a'
 	printf $b
+
+x:= dude
+
+test2:
+	echo $(x)
+	echo ${x}
+# The following is bad practice, but works
+	echo $x
+
